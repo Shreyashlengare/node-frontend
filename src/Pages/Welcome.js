@@ -1,4 +1,4 @@
-import "./../Pages/Welcome.css"
+import "./../Pages/Welcome.cssl"
   
 function Welcome () {
 
