@@ -19,7 +19,7 @@ phases:
 
 artifacts:
   files: 
-    - 'my-app/public/index.html'
+    - 'Frontend/my-app/public/index.html'
 
 cache:
   paths:
