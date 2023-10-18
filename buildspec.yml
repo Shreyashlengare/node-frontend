@@ -19,7 +19,7 @@ phases:
 
 artifacts:
   files: 
-    - 'Frontend/my-app/public/index.html'
+    - 'Users/ippo579/Desktop/Frontend/my-app/public/index.html'
 
 cache:
   paths:
