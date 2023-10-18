@@ -18,7 +18,8 @@ phases:
       - echo "Build completed on `date`"
 
 artifacts:
-  files: '**/*'
+  files: 
+    -'public/index.html'
 
 cache:
   paths:
