@@ -1,17 +1,19 @@
 version: 0.0
 os: linux
+
 files:
-  - source: /index.html
-    destination: /var/www/html/
-hooks: 
-  BeforeInstall:
-    - location: scripts/install-dependencies
+  - source: build/
+    destination: /opt/tomcat/webapps
+
+file_exists_behaviour: OVERWRITE
+
+hooks:
+  
+  ApplicationStop:
+    - location: server_stop.sh
       timeout: 300
       runas: root
-    - location: scripts/start_server
-      timeout: 300
-      runas: root
-  ApplicationStop: 
-    - location: scripts/stop-server
-      timeout: 300
+  ApplicationStart:
+    - location: server_start.sh
+      timeout: 3600
       runas: root
