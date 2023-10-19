@@ -1,26 +1,16 @@
 import { useState } from "react";
 import "./../Pages/Welcome.css"
+import axios from "axios";
 
 function Welcome() {
 
     const [data, setData] = useState()
 
-    const login = () =>{
-        fetch('http://15.206.89.133:8081/employee/demo')
-        .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.json();
-          })
-          .then(data => {
-            setData(data);
-            setLoading(false);
-          })
-          .catch(error => {
-            setError(error);
-            setLoading(false);
-          });
+    const login = async (e) => {
+        e.preventDefault()
+        console.log("Shreyash before")
+        const res = await axios.get('http://15.206.89.133:8081/employee/demo')
+        setData(res.data)
     }
 
     return (
@@ -39,7 +29,7 @@ function Welcome() {
                     <form class="login-form">
                         <input type="text" placeholder="username" />
                         <input type="password" placeholder="password" />
-                        <button onSubmit={login}>login</button>
+                        <button onClick={login}>login</button>
                         <p class="message">Not registered? <a href="#">Create an account</a></p>
                     </form>
                 </div>
