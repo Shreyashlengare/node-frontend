@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: my-app/public/index.html
+  - source: /my-app/*
     destination: /home/ubuntu/apache-tomcat-10.1.14/webapps
 
 file_exists_behaviour: OVERWRITE
@@ -12,7 +12,6 @@ hooks:
     - location: Installdependencies
       timeout: 300
       runas: root
-  
   ApplicationStop:
     - location: server_stop.sh
       timeout: 300
