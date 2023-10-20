@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Stop the Apache Tomcat service
+sudo systemctl stop tomcat
+
+# Remove the existing deployment in the Tomcat webapps directory
+sudo rm -rf /home/ubuntu/apache-tomcat-10.1.14/webapps/my-app
+
+# Optionally, you can create a backup of the current version for rollback
+# mv /path/to/tomcat/webapps/your-app-name /path/to/tomcat/webapps/your-app-name-backup-$(date +"%Y%m%d%H%M%S")
+
+# Create a directory for your new deployment
+sudo mkdir -p /home/ubuntu/apache-tomcat-10.1.14/webapps/my-app
+
+# You might need to set appropriate permissions
+# chown -R tomcat:tomcat /path/to/tomcat/webapps/your-app-name
+
+# If your deployment includes configuration files or environment-specific changes, you can apply them here
+# For example, you might copy configuration files or secrets to the appropriate locations
+
+# Optionally, you can do database migrations or other pre-install tasks here
+sudo systemctl restart tomcat
