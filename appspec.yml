@@ -9,14 +9,14 @@ file_exists_behaviour: OVERWRITE
 
 hooks:  
   BeforeInstall:
-    - location: server_clear.sh
+    - location: scripts/server_clear.sh
       timeout: 300
       runas: root 
   ApplicationStop:
-    - location: server_stop.sh
+    - location: scripts/server_stop.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: server_start.sh
+    - location: scripts/server_start.sh
       timeout: 3600
       runas: root
