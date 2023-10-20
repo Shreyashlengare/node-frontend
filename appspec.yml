@@ -7,11 +7,7 @@ files:
 
 file_exists_behaviour: OVERWRITE
 
-hooks:
-  BeforeInstall:
-    - location: Installdependencies
-      timeout: 300
-      runas: root
+hooks:  
   ApplicationStop:
     - location: server_stop.sh
       timeout: 300
