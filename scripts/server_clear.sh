@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-rm -rf /home/ubuntu
+rm -rf /opt/codedeploy-agent/deployment-root
 
