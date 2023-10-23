@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-rm -rf /opt/codedeploy-agent/deployment-root
+rm -rf /home/ubuntu/apache-tomcat-10.1.14
 
