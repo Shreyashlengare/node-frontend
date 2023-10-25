@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /appspec.yml
-    destination: /var/opt/frontend
+    destination: /var/www/html
 file_exists_behaviour: OVERWRITE
 
 hooks:  
