@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /public/index.html
+  - source: /build
     destination: /home/ubuntu/apache-tomcat-10.1.14/webapps/ROOT/
 file_exists_behaviour: OVERWRITE
 
