@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /my-app/*
+  - source: /my-app
     destination: /home/ubuntu/apache-tomcat-10.1.14/webapps/frontend1/
 
 file_exists_behaviour: OVERWRITE
