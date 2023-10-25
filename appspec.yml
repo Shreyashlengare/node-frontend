@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /appspec.yml
-    destination: /opt/codedeploy-agent/deployment-root/144a822c-cc4e-47d3-bfb9-31cd5cf28adc/d-SWU5NKR91/deployment-archive/
+    destination: /var/opt/frontend
 file_exists_behaviour: OVERWRITE
 
 hooks:  
