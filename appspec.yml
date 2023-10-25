@@ -3,8 +3,7 @@ os: linux
 
 files:
   - source: /build
-    destination: /home/ubuntu/apache-tomcat-10.1.14/webapps/frontend1/
-
+    destination: /var/opt/frontend/
 file_exists_behaviour: OVERWRITE
 
 hooks:  
