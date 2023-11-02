@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: myreactapp/*
+  - source: /myreactapp/*
     destination: /home/ubuntu/apache-tomcat-10.1.14/webapps/
 file_exists_behaviour: OVERWRITE
 
