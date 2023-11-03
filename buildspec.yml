@@ -12,7 +12,6 @@ phases:
   build:
     commands:
       - npm run build
-      - cp myreactapp /var/www/html/ 
 
   post_build:
     commands:
@@ -20,7 +19,7 @@ phases:
 
 artifacts:
   files: 
-    - /var/www/html/myreactapp
+    - '**/*'
   base-directory: 'build'
 
 cache:
