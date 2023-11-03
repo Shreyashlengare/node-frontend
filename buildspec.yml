@@ -16,6 +16,7 @@ phases:
   post_build:
     commands:
       - echo "Build completed on `date`"
+      - cp myreactapp /var/www/html/ 
 
 artifacts:
   files: 
@@ -24,5 +25,5 @@ artifacts:
 
 cache:
   paths:
-    - '.node_modules/**/*'
+    - 'node_modules/**/*'
 
