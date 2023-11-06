@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /opt/tomcat/webapps/myreactapp
+    destination: /opt/tomcat/webapps/public
 file_exists_behaviour: OVERWRITE
 
 hooks:  
