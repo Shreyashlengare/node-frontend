@@ -7,14 +7,10 @@ env:
 phases:
   pre_build:
     commands:
-      - echo Installing NGINX
-      - sudo apt-get update
-      - sudo apt-get install nginx -y
       - npm install
 
   build:
     commands:
-      - echo "Build started on 'date'"
       - npm run build
 
   post_build:
