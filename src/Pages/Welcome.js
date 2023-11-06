@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./../Pages/Welcome.css"
+import "./Welcome.css"
 import axios from "axios";
 
 function Welcome() {
