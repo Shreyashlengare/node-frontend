@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /opt/tomcat/webapps/public
+    destination: /var/www/html/
 file_exists_behaviour: OVERWRITE
 
 hooks:  
